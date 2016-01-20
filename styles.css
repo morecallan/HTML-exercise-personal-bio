@@ -2,56 +2,91 @@ body {
     background-color: #dcdcdc;
     font-family: 'Noto Sans', sans-serif;
     width: 90%;
+    margin: 1em;
 }
 
-ul, ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav {
+.nav {
     margin: 0;
     background-color: darkgrey;
-    height: 71px;
+    min-width: 720px;
+    border-radius: 4px;
 }
 
-
-nav ul{
+.nav ul, ol {
+    list-style: none;
+    margin: 1em;
+    padding: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
-}
 
-nav li {
-    padding: 0;
-    margin: 0;
 }
 
 img {
+    width: 170px;
+    position: relative;
+    top: 2.5px;
+    border: 3px dashed white;
+
+}
+
+.image li {
     width: 200px;
     margin: 0;
     padding: 0;
+    flex: 0 1 auto;
 }
 
-.nameTitle {
-    float: 2 0 30%;
+nav h1, h5 {
+    margin: 0;
+    padding: 0;
+    flex: 3 3 auto;
     text-align: center;
+    position: relative;
+    top: 10px;
+    width: 350px;
 }
 
-h3 {
-    display: inline;
-    float: left;
+
+.nav li a{
+    padding: 10px;
     margin: 0;
-    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 30px;
+    flex: 0 1 auto;
+    background-color: #6c00cc;
+    border-radius: 6px;  
+    width: 100px; 
 }
 
 
-.employmentDate {
-    display: inline;
-    float: right;
+.nav li a:hover {
+    border: 3px dashed white;
+    margin: -3px;
+}
+
+/******************* Styling employment ************************/
+.employment h3 {
+    padding: 0;
     margin: 0;
-    padding: 0;
+    color: #6c00cc;
 }
+
+.employment h4 {
+    padding: 0;
+    margin: 0;
+    color:;
+}
+
+.employment {
+    width: 100%;
+    margin: 25px auto;
+    font-size: 80%;
+    background: rgba(102, 102, 153, 0.1);
+    padding: 5px;
+    border-radius: 4px;
+}
+
